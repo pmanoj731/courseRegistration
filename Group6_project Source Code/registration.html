@@ -1,0 +1,499 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>UCM Spring 2016 </title>
+		<link href="design.css" rel="stylesheet" type="text/css" >
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-n1.css" />
+		</noscript>
+		<script src="validate.js">
+
+		
+		</script>
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+						
+				<!-- Header -->
+					<div id="header" class="container">
+						
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Home</a></h1>
+						
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+								    <!--Drop Down List-->
+									<li>
+									<a href=""><span>About Us</span></a>
+									<ul>
+									<li><a href="https://www.ucmo.edu/about/">UCM</a></li>
+									<li><a href="https://www.ucmo.edu/cs/ms/">Computer Science</a></li>
+									<li><a href="https://www.ucmo.edu/cis/degrees/msit_info.cfm">Computer Information System</a></li>
+									<li><a href="https://www.ucmo.edu/sotgrad/programs/im.cfm">Industrial Management</a></li>
+									</ul>
+									</li>
+									<li>
+										  <a href="">Major</a>
+										<ul>
+											
+													
+													<li>
+													<span><a href="">Computer Science</a></span>
+													<ul>
+													<li><a href="Adv Comp Netwrkng & Security.html">Adv Comp Netwrkng & Security</a></li>
+													<li><a href="Database Theory & Apps.html">Database Theory & Apps</a></li>
+													<li><a href="Adv Algorithms & Data Structrs.html">Adv Algorithms & Data Structrs</li></a>
+													
+													</ul>
+													</li>
+													
+													<li>
+													<span><a href="">Computer Information System</a></span>
+													<ul>
+													<li><a href="Mng Info Security in Orgnzatns.html">Mng Info Security in Orgnzatns</a></li>
+													<li>
+													<span><a href="Comm Network Mgt.html">Comm Network Mgt</a></span>
+													
+													<li><a href="Applic Develop Using Java.html">Applic Develop Using Java</a></li>
+												</ul>
+													</li>
+													<li>
+													<span>
+													<a href="">Industrial Management</a>
+													</span>
+													<ul>
+													<li><a href="Engineering Economy.html">Engineering Economy</a></li>
+													<li><a href="Project Management.html">Project Management</a></li>
+													<li><a href="Industrial Management.html">Industrial Management</a></li>
+													</ul>
+													</li>
+													 
+										</ul> 
+									</li>
+									
+									<li class="break"><a href="Registrationexpire.php">Registration</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+								    
+								</ul>
+							</nav>
+
+					</div></div>
+		<!-- Main Wrapper -->
+			<div class="wrapper">
+
+				<div class="container">
+					<div class="row" id="main">
+					
+						<div class="12u">
+						    <!-- Content -->
+								<article id="content">
+									<header>
+										<h2>Registration</h2>
+										<span><em>segroup6</em>||segrp@gmail.com</span>
+									</header>
+								</article>
+						<div id="form">
+					<form name="formname" id="formname" action="" method="post" onsubmit="return validateForm();">
+					<table border="0">
+					<tr>
+					<td>Full Name:</td>
+					<td><input type="text" name="name" placeholder="Enter your Name" required ></td>
+					</tr>
+					<tr>
+					<td>ROLL Number:</td>
+					<td><input type="text" name="phone" placeholder="ROLL Number" required ></td>
+					</tr>
+					<tr>
+					<td>Email-ID:</td>
+					<td><input type="email" name="email" placeholder="Email Id" required ></td>
+					</tr>
+					<tr>
+					<td>Select course :</td>
+					<td><select name="course" autofocus required>
+										 <optgroup label="Computer Science">
+										  <option value="Adv Comp Netwrkng & Security">Adv Comp Netwrkng & Security</option>
+                                          <option value="Database Theory & Apps">Database Theory & Apps</option>
+                                          <option value="Adv Algorithms & Data Structrs">Adv Algorithms & Data Structrs</option>
+										  </optgroup>
+										  <optgroup label="Computer Information Systems">
+										  <option value="Mng Info Security in Orgnzatns">Mng Info Security in Orgnzatns</option>
+										  <option value="Comm Network Mgt">Comm Network Mgt</option>
+										  <option value="Applic Develop Using Java">Applic Develop Using Java</option>
+										  </optgroup>  
+										  <optgroup label="Industrial Management">
+										  <option value="Engineering Economy">Engineering Economy</option>
+										  <option value="Industrial Management">Industrial Management</option>
+										  <option value="Project Management">Project Management</option>
+										  </optgroup>
+										  </select>
+					</td>
+					</tr>
+					<tr>
+					<td>Select Lecturer</td>
+					<td><select name="lecturers" autofocus required onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);">
+										 
+										  <option value="yhien liang">Yiheng Liang </option>
+                                          <option value="Zhiyong Shan">Zhiyong Shan</option>
+                                          <option value="Wen Cheng">Wen Cheng</option>
+										 
+										  <option value="Hyungbae Park">Hyungbae Park</option>
+										  <option value="Sunae Shin">Sunae Shin</option>
+										  <option value="Dr. Xiaodong Yue">Dr. Xiaodong Yue</option>
+										  
+										  <option value="Songlin Tian">Songlin Tian</option>
+										  <option value="Ahmad Y Rawashdeh">Ahmad Y Rawashdeh</option>
+										  <option value="Kaoning Hu">Kaoning Hu</option>
+										<option value="Majid Saadatmanesh">Majid Saadatmanesh</option>
+										<option value="Songqing Yue">Songqing Yue</option>
+										<option value="Hang Chen">Hang Chen</option>
+										<option value="Tianyang Wang">Tianyang Wang</option>
+										<option value="Mohammad Rawashdeh">Mohammad Rawashdeh</option>
+										<option value="Bo Li">Bo Li</option>
+										<option value="S M Taiabul Haque">S M Taiabul Haque</option>
+										<option value="Ikhyun Park">Ikhyun Park</option>
+										<option value="Yui Man Lui">Yui Man Lui</option>
+										<option value="Curtis N Cooper">Curtis N Cooper</option>
+										<option value="Mahmoud A Yousef">Mahmoud A Yousef</option>
+										<option value="Kamal">Kamal</option>
+	                                    <option value="Cadathur V Chakravarthy">Cadathur V Chakravarthy</option>
+										<option value="Sam S Ramanujan">Sam S Ramanujan</option>
+									    <option value="Ronald Woolsey">Ronald Woolsey</option> 
+                                        <option value="Cynthia Horta">Cynthia Horta</option>
+										<option value="Suhansa Rodchua">Suhansa Rodchua</option>
+										
+
+										  </select></td>
+					</tr>
+					<tr>
+					<td>Select Class Time</td>
+					<td>
+					<script type="text/javascript" language="JavaScript">
+ document.write('<select name="class_time"><option value="">Select Class time</option></select>')
+ </script><noscript><select name="class_time" id="class_time" >
+ <option value="">Select Sub-Category</option>
+ </select>
+ </noscript></td>
+					</tr>
+</table>
+								     <input type="button" value="Register" id="registerbutton" onclick="validateForm();">&nbsp;&nbsp;&nbsp;<input type="reset" value="Cancel">
+								
+							</form>
+						
+					
+						</div>
+						<br>
+						<div id="result"></div>
+					</div>
+				</div>
+			</div>
+           </div>
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+
+				<!-- Footer -->
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Any queries?</h2>
+							<span>You can submit your query by asking us a question in the message column.<br>
+							We will respond to your query as soon as possible.<br>
+							Please enter a valid email address.
+							</span>
+						    
+						</header>
+						<div class="row">
+							<section class="6u">
+								<form method="post" action="query.php">
+									<div class="row half">
+										<div class="6u">
+											<input name="name" placeholder="Name" type="text" class="text" />
+										</div>
+										<div class="6u">
+											<input name="email" placeholder="Email" type="text" class="text" />
+										</div>
+									</div>
+									<div class="row half">
+										<div class="12u">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="row half">
+										<div class="12u">
+											<ul class="actions">
+												<li><a href="#" class="button"><input type="submit" value="Submit"></a></li>
+												<li><a href="#" class="button"><input type="reset" value="Clear Form"></a></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="6u">
+								<div class="row no-collapse-1">
+									<ul class="divided icons 6u">
+										<li class="fa fa-facebook"><a href="https://www.facebook.com/segrp6/" style="text-decoration:none"><span class="extra"></span>Facebook</a></li>
+										
+									</ul>
+									<ul class="divided icons 6u">
+										<li class="fa fa-youtube"><a href="https://www.youtube.com/user/UCMLive" style="text-decoration:none"><span class="extra"></span>Youtube</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>&copy; SEGROUP6.&nbsp; All rights reserved.</li>
+							<li>segrp6@gmail.com</li>
+						</ul>
+					</div>
+
+			</div>
+
+	</body>
+	<script language="javascript" type="text/javascript">
+ function dropdownlist(listindex)
+ {
+
+document.formname.class_time.options.length = 0;
+ switch (listindex)
+ {
+ //add lecturers
+ case "yhien liang" :
+ document.formname.class_time.options[0]=new Option("Select Class Time","");
+ document.formname.class_time.options[1]=new Option("Class 12:20 pm-3:00 pm Friday","Class 12:20 pm-03:00 pm Tuesday");
+ document.formname.class_time.options[2]=new Option("Class 12:20 pm-03:00 pm Tuesday ","Class 12:20 pm-03:00 pm Tuesday ");
+ document.formname.class_time.options[3]=new Option("Class 08:40 am-11:20 am Wednesday ","Class 08:40 am-11:20 am Wednesday");
+ document.formname.class_time.options[4]=new Option("Class 03:10 pm-05:50 pm Thursday","Class 03:10 pm-05:50 pm Thursday");
+ document.formname.class_time.options[5]=new Option("Class 12:20 pm-03:00 pm Friday","Class 12:20 pm-03:00 pm Friday");  
+ document.formname.class_time.options[6]=new Option("Class 02:20 pm-05:00 pm Saturday","Class 02:20 pm-05:00 pm Saturday");
+
+ break;
+
+ case "Zhiyong Shan" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm Tuesday ","Class 12:20 pm-03:00 pm Tuesday ");
+ document.formname.class_time.options[1]=new Option("Class 08:40 am-11:20 am Tuesday","Class 08:40 am-11:20 am Tuesday");
+ document.formname.class_time.options[2]=new Option("Class 08:40 am-11:20 am Thursday","Class 08:40 am-11:20 am Thursday");
+ document.formname.class_time.options[3]=new Option("Class 12:20 pm-03:00 pm Thursday","Class 12:20 pm-03:00 pm Thursday");
+ document.formname.class_time.options[4]=new Option("Class 02:20 pm-05:00 pm Saturday","Class 02:20 pm-05:00 pm Saturday");
+ document.formname.class_time.options[5]=new Option("Class 11:30 am-02:10 pm Saturday ","Class 11:30 am-02:10 pm Saturday ");
+
+ break;
+
+ case "Wen Cheng" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm Friday "," Class 12:20 pm-03:00 pm Friday ");
+ document.formname.class_time.options[1]=new Option("Class 03:10 pm-05:50 pm Wednesday ","Class 03:10 pm-05:50 pm Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 11:30 am-02:10 pm Saturday ","Class 11:30 am-02:10 pm Saturday ");
+ document.formname.class_time.options[3]=new Option("Class 08:40 am-11:20 am Friday","Class 08:40 am-11:20 am Friday");
+ document.formname.class_time.options[4]=new Option("Class 08:00 am-10:40 am Saturday ","Class 08:00 am-10:40 am Saturday ");
+
+ break;
+ 
+ case "Hyungbae Park" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Tuesday","Class 08:40 am-11:20 am Tuesday");
+ document.formname.class_time.options[1]=new Option("Class 08:40 am-11:20 am Wednesday","Class 08:40 am-11:20 am Wednesday");
+ document.formname.class_time.options[2]=new Option("Class 03:10 pm-05:50 pm Wednesday","Class 03:10 pm-05:50 pm Wednesday");
+ document.formname.class_time.options[3]=new Option("Class 03:10 pm-05:50 pm Thursday","Class 03:10 pm-05:50 pm Thursday");
+ document.formname.class_time.options[4]=new Option("Class 03:10 pm-05:50 pm Thursday","Class 03:10 pm-05:50 pm Thursday");
+ document.formname.class_time.options[5]=new Option("Class 11:30 am-02:10 pm Saturday","Class 11:30 am-02:10 pm Saturday");
+
+ break;
+ case "Sunae Shin" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Friday","Class 08:40 am-11:20 am Friday");
+ document.formname.class_time.options[1]=new Option("Class 03:10 pm-05:50 pm Tuesday","Class 03:10 pm-05:50 pm Tuesday");
+ document.formname.class_time.options[2]=new Option("Class 08:40 am-11:20 am Wednesday","Class 08:40 am-11:20 am Wednesday");
+ document.formname.class_time.options[3]=new Option("Class 12:20 pm-03:00 pm Wednesday ","Class 12:20 pm-03:00 pm Wednesday ");
+ document.formname.class_time.options[4]=new Option("Class 12:20 pm-03:00 pmThursday ","Class 12:20 pm-03:00 pmThursday");
+ document.formname.class_time.options[5]=new Option("Class 08:40 am-11:20 am Friday ","Class 08:40 am-11:20 am Friday");
+
+ break;
+ case "Dr. Xiaodong Yue" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Tuesday","Class 08:40 am-11:20 am Tuesday");
+
+ break;
+ case "Songlin Tian" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-3:00 pm tuesday","Class 12:20 pm-3:00 pm tuesday");
+ document.formname.class_time.options[1]=new Option("Class 8:40 am-11:20 pm Tuesday","Class 8:40 am-11:20 pm Tuesday");
+
+
+ break;
+ case "Ahmad Y Rawashdeh" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm wednesday","Class 12:20 pm-03:00 pm wednesday");
+ document.formname.class_time.options[1]=new Option("Class 8:40 am-11:20 am wednesday","Class 8:40 am-11:20 am wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 08:40 am-11:20 am Thursday","Class 08:40 am-11:20 am Thursday ");
+ document.formname.class_time.options[3]=new Option("Class 02:20 pm-05:00 pm Saturday ","Class 02:20 pm-05:00 pm Saturday");
+ document.formname.class_time.options[4]=new Option("Class 11:30 am-02:10 pm Saturday","Class 11:30 am-02:10 pm Saturday");
+
+ break;
+ case "Kaoning Hu" :
+ document.formname.class_time.options[0]=new Option("Class 08:40am -11:20 pm Wednesday","Class 08:40am -11:20 pm Wednesday");
+ document.formname.class_time.options[1]=new Option("Class 11:30 am-02:10 pm Saturday","Class 11:30 am-02:10 pm Saturday");
+ document.formname.class_time.options[2]=new Option("Class 03:10 pm-5:50 pm tuesday ","Class 03:10 pm-5:50 pm tuesday ");
+ document.formname.class_time.options[3]=new Option("Class 12:20 am-3:00 am Thursday","Class 12:20 am-3:00 am Thursday");
+ 
+ break;
+ case "Majid Saadatmanesh" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-3:00 pm Wednesday ","Class 12:20 pm-3:00 pm Wednesday ");
+ document.formname.class_time.options[1]=new Option("Class 12:20 pm-3:00 pm Wednesday ","Class 12:20 pm-3:00 pm Wednesday ");
+
+
+ break;
+ case "Songqing Yue" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Thursday","Class 08:40 am-11:20 am Thursday");
+ document.formname.class_time.options[1]=new Option("Class 08:40 am-11:20 am Wednesday ","Class 08:40 am-11:20 am Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 12:20 pm-03:00 pm Wednesday ","Class 12:20 pm-03:00 pm Wednesday ");
+ document.formname.class_time.options[3]=new Option("Class 08:40 am-11:20 am Friday ","Class 08:40 am-11:20 am Friday ");
+ document.formname.class_time.options[4]=new Option("Class 08:00 am-10:40 am Saturday","Class 08:00 am-10:40 am Saturday");
+
+
+break;
+ case "Hang Chen" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm Tuesday","Class 12:20 pm-03:00 pm Tuesday");
+
+break;
+ case "Ziyuan Meng" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Tuesday","Class 08:40 am-11:20 am Tuesday");
+ document.formname.class_time.options[1]=new Option("Class 08:00 am-10:40 am Saturday ","Class 08:00 am-10:40 am Saturday  ");
+ document.formname.class_time.options[2]=new Option("Class 03:10 pm-05:50 pm Tuesday","Class 03:10 pm-05:50 pm Tuesday");
+
+ break;
+ case "Tianyang Wang" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 am-3:10 pm Friday ","Class 12:20 am-3:10 pm Friday ");
+ document.formname.class_time.options[1]=new Option("Class 02:20 pm-5:00 pm Saturday ","Class 02:20 pm-5:00 pm Saturday  ");
+ document.formname.class_time.options[2]=new Option("Class 08:40 am-11:20 am Thursday","Class 08:40 am-11:20 am Thursday  ");
+ document.formname.class_time.options[3]=new Option("Class 12:20 pm-03:00 pm Thursday ","Class 12:20 pm-03:00 pm Thursday");
+ document.formname.class_time.options[4]=new Option("Class 08:40 am-11:20 am Friday","Class 08:40 am-11:20 am Friday");
+
+break;
+ case "Mohammad Rawashdeh" :
+ document.formname.class_time.options[0]=new Option("Class 3:10 pm-05:50 pm Tuesday ","Class 3:10 pm-05:50 pm Tuesday ");
+ document.formname.class_time.options[1]=new Option("Class 12:20 pm-03:00 pm Thursday ","Class 12:20 pm-03:00 pm Thursday ");
+ document.formname.class_time.options[2]=new Option("Class 08:40 am-11:20 am Thursday","Class 08:40 am-11:20 am Thursday ");
+ document.formname.class_time.options[3]=new Option("Class 03:10 pm-05:50 pm Thursday ","Class 03:10 pm-05:50 pm Thursday");
+ document.formname.class_time.options[4]=new Option("Class 8:00 pm-10:40 pm Saturday","Class 8:00 pm-10:40 pm Saturday");
+
+ break;
+ case "Bo Li" :
+ document.formname.class_time.options[0]=new Option("Class 03:10 am-5:50 am Thursday ","Class 03:10 am-5:50 am Thursday ");
+ document.formname.class_time.options[1]=new Option("Class 8:40 pm-11:20 pm Thursday ","Class 8:40 pm-11:20 pm Thursday ");
+ document.formname.class_time.options[2]=new Option("Class 11:30 pm-02:10 pm Saturday","Class 11:30 pm-02:10 pm Saturday ");
+ document.formname.class_time.options[3]=new Option("Class 02:20 am-05:50 pm Saturday ","Class 02:20 am-05:50 pm Saturday");
+ 
+
+break;
+ case "S M Taiabul Haque" :
+ document.formname.class_time.options[0]=new Option("Class 8:40 pm-11:20 pm Friday ","Class 8:40 pm-11:20 pm Friday");
+ document.formname.class_time.options[1]=new Option("Class 12:20 pm-03:00 pm Wednesday","Class 12:20 pm-03:00 pm Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 12:20 am-03:00 pm Thursday ","Class 12:20 am-03:00 pm Thursday  ");
+ document.formname.class_time.options[3]=new Option("Class 12:20 am-3:00 am Friday ","Class 12:20 am-3:00 am Friday");
+ document.formname.class_time.options[4]=new Option("Class 08:40 am-11:20 am Thursday ","Class 08:40 am-11:20 am Thursday ");
+ document.formname.class_time.options[5]=new Option("Class 8:40 pm-11:20 pm Wednesday  ","Class 8:40 pm-11:20 pm Wednesday  ");
+
+
+ break;
+ case "Jae Woong Lee" :
+ document.formname.class_time.options[0]=new Option("Class 08:40 am-11:20 am Tuesday  ","Class 08:40 am-11:20 am Tuesday");
+ document.formname.class_time.options[1]=new Option("Class 03:10 am-5:50 am Wednesday ","Class 03:10 am-5:50 am Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 12:20 pm-03:00 pm Wednesday ","Class 12:20 pm-03:00 pm Wednesday  ");
+ document.formname.class_time.options[3]=new Option("Class 03:10 pm-05:50 pm Thursday  ","Class 03:10 pm-05:50 pm Thursday ");
+ document.formname.class_time.options[4]=new Option("Class 08:00 am-10:40 am Saturday","Class 08:00 am-10:40 am Saturday");
+
+
+ break;
+ case "Ikhyun Park" :
+ document.formname.class_time.options[0]=new Option("Class 3:10 am-5:50 am Thursday  ","Class 3:10 am-5:50 am Thursday  ");
+ document.formname.class_time.options[1]=new Option("Class 03:10 pm-05:50 pm Wednesday  ","Class 03:10 pm-05:50 pm Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 8:40 pm-11:20 pm Wednesday ","Class 8:40 pm-11:20 pm Wednesday  ");
+ document.formname.class_time.options[3]=new Option("Class 12:20 pm-03:00 pm Thursday ","Class 12:20 pm-03:00 pm Thursday ");
+ document.formname.class_time.options[4]=new Option("Class 03:10 am-5:50 am tuesday ","Class 03:10 am-5:50 am tuesday ");
+
+break;
+ case "Yui Man Lui" :
+ document.formname.class_time.options[0]=new Option("Class 3:10 am-5:50 am Thursday  ","Class 3:10 am-5:50 am Thursday  ");
+ document.formname.class_time.options[1]=new Option("Class 03:10 pm-05:50 pm Wednesday  ","Class 03:10 pm-05:50 pm Wednesday ");
+ document.formname.class_time.options[2]=new Option("Class 8:40 pm-11:20 pm Wednesday ","Class 8:40 pm-11:20 pm Wednesday  ");
+ document.formname.class_time.options[3]=new Option("Class 12:20 pm-03:00 pm Thursday ","Class 12:20 pm-03:00 pm Thursday ");
+ document.formname.class_time.options[4]=new Option("Class 03:10 am-5:50 am tuesday ","Class 03:10 am-5:50 am tuesday ");
+
+
+break;
+ case "Curtis N Cooper" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm Tuesday","Class 12:20 pm-03:00 pm Tuesday");
+
+break;
+ case "Mahmoud A Yousef" :
+ document.formname.class_time.options[0]=new Option("Class 12:20 pm-03:00 pm Tuesday","Class 12:20 pm-03:00 pm Tuesday");
+
+ break;
+ case "Kamal" :
+ document.formname.class_time.options[0]=new Option("Class 06:00 pm-08:45 pm Tuesday ","Class 06:00 pm-08:45 pm Tuesday ");
+ document.formname.class_time.options[1]=new Option("Class 01:00 pm-03:45 pm Tuesday ","Class 01:00 pm-03:45 pm Tuesday ");
+ document.formname.class_time.options[2]=new Option("Class 01:00 pm-03:45 pm Wednesday ","Class 01:00 pm-03:45 pm Wednesday");
+
+break;
+ case "Cadathur V Chakravarthy" :
+ document.formname.class_time.options[0]=new Option("Class 06:00 pm-09:00 pm Monday","Class 06:00 pm-09:00 pm Monday");
+ document.formname.class_time.options[1]=new Option("Class 01:00 pm-03:45 pm Monday ","Class 01:00 pm-03:45 pm Monday  ");
+ document.formname.class_time.options[2]=new Option("Class 06:00 pm-08:45 pm Friday ","Class 06:00 pm-08:45 pm Friday   ");
+ document.formname.class_time.options[3]=new Option("Class 01:00 pm-03:45 pm Friday","Class 01:00 pm-03:45 pm Friday");
+
+
+break;
+ case "Sam S Ramanujan" :
+ document.formname.class_time.options[0]=new Option("Class 09:00 am-11:45 am Monday ","Class 09:00 am-11:45 am Monday ");
+ document.formname.class_time.options[1]=new Option("Class 09:00 am-11:45 am Tuesday ","Class 09:00 am-11:45 am Tuesday ");
+
+break;
+ case "Ronald Woolsey" :
+ document.formname.class_time.options[0]=new Option("Class 06:00 pm-08:45 pm Monday   ","Class 06:00 pm-08:45 pm Monday ");
+ document.formname.class_time.options[1]=new Option("Class 06:00 pm-08:45 pm Wednesday","Class 06:00 pm-08:45 pm Wednesday ");
+
+break;
+ case "Cynthia Horta" :
+ document.formname.class_time.options[0]=new Option("Class 06:00 pm-08:45 pm Monday   ","Class 06:00 pm-08:45 pm Monday ");
+ document.formname.class_time.options[1]=new Option("Class 06:00 pm-08:45 pm Tuesday ","Class 06:00 pm-08:45 pm Tuesday ");
+
+break;
+ case "Suhansa Rodchua" :
+ document.formname.class_time.options[0]=new Option("Class 12:30 pm-01:45 pm Thursday ","Class 12:30 pm-01:45 pm Thursday");
+
+ break;
+
+ }
+ return true;
+ }
+ </script>
+ <script>
+$(function(){
+$("#registerbutton").click(function(){
+$.ajax({
+type: "POST",
+url: "test_register.php",
+data: $("#formname").serialize(),
+beforeSend: function(){
+$('#result').html('<center><img src="loading.gif"></center>');
+},
+success: function(data){
+$('#result').html(data);
+},
+});
+});
+});
+</script>
+</html>
